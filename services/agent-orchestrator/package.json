@@ -1,0 +1,16 @@
+{
+  "name": "@codeforge/orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@codeforge/agents": "*",
+    "@codeforge/database": "*",
+    "@codeforge/parser": "*",
+    "@codeforge/queues": "*",
+    "@codeforge/rag": "*",
+    "@codeforge/shared": "*"
+  }
+}

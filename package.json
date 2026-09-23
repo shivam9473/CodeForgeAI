@@ -1,0 +1,23 @@
+{
+  "name": "codeforge-ai",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,worker,web -c blue,magenta,green \"npm run api\" \"npm run worker\" \"npm run web\"",
+    "api": "tsx apps/api/src/index.ts",
+    "worker": "tsx services/workers/src/index.ts",
+    "web": "npm run dev -w @codeforge/web",
+    "eval": "tsx evals/score.ts",
+    "db:migrate": "tsx packages/database/src/migrate.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

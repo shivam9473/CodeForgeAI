@@ -1,0 +1,16 @@
+{
+  "name": "@codeforge/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@codeforge/database": "*",
+    "@codeforge/orchestrator": "*",
+    "@codeforge/shared": "*",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.0"
+  }
+}

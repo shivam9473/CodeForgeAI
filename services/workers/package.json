@@ -1,0 +1,12 @@
+{
+  "name": "@codeforge/workers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@codeforge/orchestrator": "*",
+    "@codeforge/queues": "*",
+    "@codeforge/shared": "*"
+  }
+}

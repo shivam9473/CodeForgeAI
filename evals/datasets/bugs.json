@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pay-race",
+    "question": "Why can payment creation create duplicate transactions?",
+    "expectTitle": "Balance update has no lock"
+  },
+  {
+    "id": "pay-sql",
+    "question": "Find security vulnerabilities in the payment module",
+    "expectTitle": "SQL is built with string concat"
+  },
+  {
+    "id": "pay-amount",
+    "question": "Find missing validation",
+    "expectTitle": "Amount is not validated"
+  },
+  {
+    "id": "pay-try",
+    "question": "Find error handling bugs",
+    "expectTitle": "Async controller has no try/catch"
+  }
+]
